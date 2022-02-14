@@ -159,6 +159,7 @@ nav {
     grid-area: img;
     min-width: 250px;
     position: relative;
+    border-radius: 10px;
   }
 
   .section__subtitle--intro {
@@ -227,6 +228,7 @@ nav {
 }
 .about-me__img {
   box-shadow: var(--bs);
+  border-radius: 10px;
 }
 
 /* media queries about me using grid */
@@ -256,6 +258,7 @@ nav {
   .about-me__img {
     grid-area: img;
     position: relative;
+    border-radius: 10px;
   }
 }
 /* portfolio section */
