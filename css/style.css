@@ -1,217 +1,258 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* custom css property variables */
 :root {
-    /* font families */
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+  /* font families */
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
 
-    /* font weights */
-    --fw-reg: 300;
-    --fw-bold: 900;
+  /* font weights */
+  --fw-reg: 300;
+  --fw-bold: 900;
 
-    /* colors */
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+  /* colors */
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
 
-    /* font sizes */
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+  /* font sizes */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 
-    /* box shadow */
+  /* box shadow */
 
-    --bs: 0.6em 0.6em 1em rgba(0,0,0,.45);
+  --bs: 0.6em 0.6em 1em rgba(0, 0, 0, 0.45);
 }
 
 /* media query custom property variables */
 
 @media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
 }
 
 /* styling */
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
 section {
-    padding: 5em 2em;
+  padding: 5em 2em;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 /* general typography */
 
 strong {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 
 /* button (portfolio page button at end of services) */
 .btn {
-    display: inline-block;
-    padding: .5em 1.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    /* font-size: 0.8rem; */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  /* font-size: 0.8rem; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms;
 }
 .btn:hover {
-    transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1;
+  line-height: 1;
 }
 h1 {
-    font-size: var(--fs-h1);
+  font-size: var(--fs-h1);
 }
 
 h2 {
-    font-size: var(--fs-h2);
+  font-size: var(--fs-h2);
 }
 
 h3 {
-    font-size: var(--fs-h3);
+  font-size: var(--fs-h3);
 }
 
 .section__title {
-    margin-bottom: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--intro {
-    font-weight: var(--fw-reg);
+  font-weight: var(--fw-reg);
 }
 
 .section__title--intro strong {
-    display: block;
+  display: block;
 }
 
 .section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3)
+  margin: 0;
+  font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
-    padding: 0.25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
 }
 
-
-nav {display: none}
+nav {
+  display: none;
+}
 /* intro section */
 
 .intro {
-    position: relative;
+  position: relative;
 }
 
 .intro__img {
-    box-shadow: var(--bs);
-    border-radius: 10px;
+  box-shadow: var(--bs);
+  border-radius: 10px;
 }
 
 .section__subtitle--intro {
-    display: inline-block;
+  display: inline-block;
 }
 /* media queries for intro section picture and title */
 @media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-    
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-    }    
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      'img title'
+      'img subtitle';
+    grid-template-columns: min-content max-content;
+  }
 
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em)
-    }
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
 }
 
 /* services section */
 
 .my-services {
-    /* background-color: var(--clr-dark); */
-    background-color: grey;
-    background-image: url(/images/services-background.jpeg);
-    background-size: cover;
-    /* use background blend mode to blend background img with background color, make the image darker */
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
+  /* background-color: var(--clr-dark); */
+  background-color: grey;
+  background-image: url(/images/services-background.jpeg);
+  background-size: cover;
+  /* use background blend mode to blend background img with background color, make the image darker */
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
 }
 
 .section__title--services {
-    color: var(--clr-accent);
-    position: relative;
+  color: var(--clr-accent);
+  position: relative;
 }
 /* create little line under my services title, using psuedo element */
 .section__title--services::after {
-    content: '';
-    display: block;
-    width: 3em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
 }
 
 .service {
-    max-width: 570px;
-    margin: 0 auto;
+  max-width: 570px;
+  margin: 0 auto;
 }
 /* media query to break services into columns on bigger screens */
 
 @media (min-width: 800px) {
-    .services {
-        display:flex;
-        /* max-width: 1000px; */
-        margin: 0 auto;
-    }
+  .services {
+    display: flex;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+  }
 
-    /* create a margin between sibling service elements, to create space so the text isn't touching eachother */
+  /* create a margin between sibling service elements, to create space so the text isn't touching eachother */
 
-    .service + .service {
-        margin-left: 2em;
-    }
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
+/* about me section styling */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+/* media queries about me using grid */
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      'title img'
+      'subtitle img'
+      'text img';
+    grid-column-gap: 2em;
+  }
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+  }
 }
