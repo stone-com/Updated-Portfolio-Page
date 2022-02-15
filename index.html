@@ -16,12 +16,9 @@
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="images/stone-logo.jpg" alt="">
-        </div>
-        <button class="nav-toggle" aria-label='toggle navigation'>
-            <span class="hamburger"></span>
+       
+        <button class="nav-toggle" aria-label="toggle navigation">     
+            <i class="fas fa-bars"></i>
         </button>
         <!-- Navbar -->
         <nav class="nav">
@@ -32,15 +29,16 @@
                 <li class="nav__item"><a href="#portfolio" class='nav__link'>My Portfolio</a></li>
             </ul>
         </nav>
+    </header>
         <!-- Intro/home jumbotron type thing -->
         <section class='intro' id='home'>
             <h1 class='section__title section__title--intro'>
-                Hi, my name is <strong>Stone Comstock</strong>
+                Hi, my name's <strong>Stone Comstock</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Web Developer</p>
             <img src="images/me3.jpg" alt="A Picture of Stone Comstock" class='intro__img'>
         </section>
-
+    
         <!-- Services Section -->
         <section class="my-services" id="services">
             <h2 class="sectin__title section__title--services">My Services</h2>
@@ -103,15 +101,29 @@
                 
             </div>
         </section>
-    </header>
+    
     <!-- footer section -->
-    <footer>
+    <footer class='footer'>
         <a href="mailto:comstockstone@yahoo.com" class='footer__link'>comstockstone@yahoo.com</a>
         <ul class="social-list">
-            <li class='social-list__item'><a href="https://github.com/stone-com" class='social-list__link'>Github</a></li>
-            <li class='social-list__item'><a href="https://linkdin.com" class='social-list__link'>Linkdin</a></li>
-            <li class='social-list__item'><a href="https://facebook.com.com" class='social-list__link'>Facebook</a></li>
+            <li class='social-list__item'>
+                <a href="https://github.com/stone-com" class='social-list__link'>
+                    <i class='fab fa-github'></i>
+                </a>
+            </li>
+            <li class='social-list__item'>
+                <a href="https://linkdin.com" class='social-list__link'>
+                    <i class='fab fa-linkedin'></i>
+                </a>
+            </li>
+            <li class='social-list__item'>
+                <a href="https://facebook.com.com" class='social-list__link'>
+                    <i class='fab fa-facebook'></i>
+                </a>
+            </li>
         </ul>
     </footer>
+    <!-- link to JS file for nav toggle -->
+    <script src="js/script.js"></script>
 </body>
 </html>

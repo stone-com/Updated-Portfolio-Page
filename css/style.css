@@ -63,8 +63,6 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-
-
 /* button (portfolio page button at end of services) */
 .btn {
   display: inline-block;
@@ -124,10 +122,73 @@ h3 {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
-
-nav {
-  display: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
 }
+
+
+/* nav styling */
+.nav {
+  position: fixed;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+}
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+
+/* nav  toggle button */
+.nav-toggle {
+  padding: 0.3em;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  color: var(--clr-accent);
+  z-index: 30;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+  transform: rotate(90deg);
+}
+
+
 /* intro section */
 
 .intro {
@@ -284,7 +345,7 @@ nav {
   margin: 4px;
 }
 .portfolio__img {
-    transition: transform 200ms;
+  transition: transform 200ms;
 }
 
 /* increase size of portfolio image when hovering over item */
@@ -293,9 +354,53 @@ nav {
 }
 
 .portfolio__img--caption {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+/* footer styling */
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer a {
+  /* change footer links to inherit text color from footer parent */
+  color: inherit;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  /* change opacity when hovering over links */
+  opacity: 0.7;
+}
+
+.footer__link {
+  /* change size and weight of footer links */
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+.social-list {
+  /* get rid of bullet points */
+  list-style: none;
+  /* set to flex to display next to eachother rather than stacked */
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.social-list__item {
+  margin: 0 1em;
+  font-size: 2rem;
+}
+
+.social-list__link {
+  padding: 1em;
 }
