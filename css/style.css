@@ -178,7 +178,7 @@ nav {
 .my-services {
   /* background-color: var(--clr-dark); */
   background-color: grey;
-  background-image: url(images/services-background.jpeg);
+  background-image: url('/images/services-background.jpeg');
   background-size: cover;
   /* use background blend mode to blend background img with background color, make the image darker */
   background-blend-mode: multiply;
