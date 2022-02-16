@@ -12,9 +12,9 @@
   --fw-bold: 900;
 
   /* colors */
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-primary: #303030;
+  --clr-secondary: #fff;
+  --clr-accent: #671818;
 
   /* font sizes */
   --fs-h1: 3rem;
@@ -44,8 +44,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -71,7 +71,7 @@ strong {
   display: inline-block;
   padding: 0.5em 1.5em;
   background: var(--clr-accent);
-  color: var(--clr-dark);
+  color: var(--clr-secondary);
   text-decoration: none;
   cursor: pointer;
   /* font-size: 0.8rem; */
@@ -131,12 +131,11 @@ header {
   padding: 1em;
 }
 
-
 /* nav styling */
 .nav {
   position: fixed;
-  background: var(--clr-dark);
-  color: var(--clr-light);
+  background: var(--clr-secondary);
+  color: var(--clr-primary);
   top: 0;
   bottom: 0;
   left: 0;
@@ -180,6 +179,11 @@ header {
   top: 1em;
   color: var(--clr-accent);
   z-index: 30;
+  transition: transform 250ms;
+  text-shadow: -1px 1px 2px rgb(255, 255, 255),
+    1px 1px 2px rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255), 
+    -1px -1px 0 rgb(255, 255, 255);
 }
 
 .nav-open .nav {
@@ -190,7 +194,6 @@ header {
   position: fixed;
   transform: rotate(90deg);
 }
-
 
 /* intro section */
 
@@ -240,19 +243,22 @@ header {
 /* services section */
 
 .my-services {
-  /* background-color: var(--clr-dark); */
   background-color: grey;
   background-image: url('../images/services-background.jpeg');
   background-size: cover;
   /* use background blend mode to blend background img with background color, make the image darker */
   background-blend-mode: multiply;
-  color: var(--clr-light);
+  color: var(--clr-secondary);
   text-align: center;
 }
 
 .section__title--services {
   color: var(--clr-accent);
   position: relative;
+  text-shadow: -1px 1px 2px rgb(255, 255, 255),
+    1px 1px 2px rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255), 
+    -1px -1px 0 rgb(255, 255, 255);
 }
 /* create little line under my services title, using psuedo element */
 .section__title--services::after {
@@ -261,7 +267,7 @@ header {
   width: 3em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-primary);
 }
 
 .service {
@@ -328,13 +334,18 @@ header {
 /* portfolio section */
 
 .my-portfolio {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
   text-align: center;
 }
-
+.section__title--portfolio {
+  text-shadow: -1px 1px 2px rgb(255, 255, 255),
+    1px 1px 2px rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255), 
+    -1px -1px 0 rgb(255, 255, 255);
+}
 .section__subtitle--portfolio {
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
@@ -367,8 +378,8 @@ header {
 /* footer styling */
 
 .footer {
-  background: #111;
-  color: var(--clr-accent);
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
   text-align: center;
   padding: 2.5em 0;
 }
@@ -406,4 +417,8 @@ header {
 
 .social-list__link {
   padding: 1em;
+}
+
+.footer .resume-btn {
+  color: var(--clr-secondary);
 }
