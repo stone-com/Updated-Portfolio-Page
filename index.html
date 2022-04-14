@@ -1,86 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stone Comstock Portfolio</title>
     <!-- Normalize css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- css file link -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
-       
-        <button class="nav-toggle" aria-label="toggle navigation">     
-            <i class="fas fa-bars"></i>
-        </button>
-        <!-- Navbar -->
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class='nav__link'>Home</a></li>
-                <li class="nav__item"><a href="#services" class='nav__link'>My Services</a></li>
-                <li class="nav__item"><a href="#about" class='nav__link'>About Me</a></li>
-                <li class="nav__item"><a href="#portfolio" class='nav__link'>My Portfolio</a></li>
-                <li class="nav__item"><a href="images/resume.pdf" download class='btn resume-btn'>Download My Resume</a></li>
-            </ul>
-        </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Navbar -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">My Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="images/resume.pdf" download class="btn resume-btn"
+              >Download My Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-        <!-- Intro/home jumbotron type thing -->
-        <section class='intro' id='home'>
-            <h1 class='section__title section__title--intro'>
-                Hi, my name's <strong>Stone Comstock</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Web Developer</p>
-            <img src="images/me3.jpg" alt="A Picture of Stone Comstock" class='intro__img'>
-        </section>
-    
-        <!-- Services Section -->
-        <section class="my-services" id="services">
-            <h2 class="sectin__title section__title--services">My Services</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Front End Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsum saepe debitis quas minus ab nisi. Consectetur architecto voluptates dolorum expedita! Assumenda quasi ex dolores perspiciatis amet corporis, quas facilis?</p>
-                </div>
-                <div class="service">
-                    <h3>Back End Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quo quisquam dolor, sequi soluta saepe delectus porro voluptate eius. Distinctio minus cumque est eum ducimus perferendis architecto ipsam incidunt harum.</p>
-                </div>
-                <div class="service">
-                    <h3>Mobile Development</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates omnis eos, dicta deleniti soluta officiis corrupti numquam consequatur id iure, ratione quo perspiciatis possimus magnam porro commodi repellat officia consectetur.</p>
+    <!-- Intro/home jumbotron type thing -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, my name's <strong>Stone Comstock</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Web Developer</p>
+      <img
+        src="images/me3.jpg"
+        alt="A Picture of Stone Comstock"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Services Section -->
+    <section class="my-services" id="services">
+      <h2 class="sectin__title section__title--services">My Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Front End Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            ipsum saepe debitis quas minus ab nisi. Consectetur architecto
+            voluptates dolorum expedita! Assumenda quasi ex dolores perspiciatis
+            amet corporis, quas facilis?
+          </p>
+        </div>
+        <div class="service">
+          <h3>Back End Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+            quo quisquam dolor, sequi soluta saepe delectus porro voluptate
+            eius. Distinctio minus cumque est eum ducimus perferendis architecto
+            ipsam incidunt harum.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Mobile Development</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            omnis eos, dicta deleniti soluta officiis corrupti numquam
+            consequatur id iure, ratione quo perspiciatis possimus magnam porro
+            commodi repellat officia consectetur.
+          </p>
+        </div>
+      </div>
+      <a href="#portfolio" class="btn">My Portfolio</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Web Developer from Olympia, WA
+      </p>
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          sit tempora repudiandae repellat explicabo possimus iusto neque,
+          numquam quaerat, at vitae labore laudantium asperiores, exercitationem
+          reiciendis excepturi ex quo! Hic?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          praesentium cupiditate eum exercitationem autem numquam id sed! Ea,
+          velit. Laborum accusantium, laudantium id nisi doloribus et tempore
+          iusto distinctio aperiam.
+        </p>
+      </div>
+      <img src="images/me5.jpeg" alt="Pic of Stone." class="about-me__img" />
+    </section>
+
+    <!-- My portfolio -->
+    <section class="my-portfolio" id="portfolio">
+      <h2 class="section__title section__title--portfolio">My Portfolio</h2>
+      <p class="section__subtitle section__subtitle--portfolio">
+        Some examples of my work. Swipe left or right to check out different projects. Click one one to view the deployed application!
+      </p>
+      
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+                <div class="card">
+                    <img src="images/movie-tracker-screenshot.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h1 class="card__header">Card Header</h1>
+                        <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus illo odit beatae magnam quaerat numquam inventore dignissimos blanditiis doloremque veniam.</p>
+                        <button class="card__btn">Check it Out!</button>
+                    </div>
                 </div>
             </div>
-            <a href="#portfolio" class='btn'>My Portfolio</a>
-        </section>
-
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">About Me</h2>
-            <p class="section__subtitle section__subtitle--about">Web Developer from Olympia, WA</p>
-            <div class="about-me__body">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit tempora repudiandae repellat explicabo possimus iusto neque, numquam quaerat, at vitae labore laudantium asperiores, exercitationem reiciendis excepturi ex quo! Hic?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium cupiditate eum exercitationem autem numquam id sed! Ea, velit. Laborum accusantium, laudantium id nisi doloribus et tempore iusto distinctio aperiam.
-                </p>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="images/movie-tracker-screenshot.png" alt="" class="card__img">
+                <div class="card__content">
+                    <h1 class="card__header">Card Header</h1>
+                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus illo odit beatae magnam quaerat numquam inventore dignissimos blanditiis doloremque veniam.</p>
+                    <button class="card__btn">Check it Out!</button>
+                </div>
             </div>
-            <img src="images/me5.jpeg" alt="Pic of Stone." class='about-me__img'>
-        </section>
+        </div>
+          <div class="swiper-slide"><div class="card">
+            <img src="images/movie-tracker-screenshot.png" alt="" class="card__img">
+            <div class="card__content">
+                <h1 class="card__header">Card Header</h1>
+                <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus illo odit beatae magnam quaerat numquam inventore dignissimos blanditiis doloremque veniam.</p>
+                <button class="card__btn">Check it Out!</button>
+            </div>
+        </div></div>
+            </div>
+          </div>
+          
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-        <!-- My portfolio -->
-        <section class="my-portfolio" id="portfolio">
-            <h2 class="section__title section__title--portfolio">My Portfolio</h2>
-            <p class='section__subtitle section__subtitle--portfolio'>Some examples of my work. Click an image to check out the deployed application!</p>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
-            <div class="portfolio">
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- <div class="portfolio">
                 <a href="https://mike-c-sanders.github.io/Project-1/" class='portfolio__item' target='_blank'><img src="images/movie-tracker-screenshot.png" alt="" class='portfolio__img'>
                 </a>
                         
@@ -100,33 +202,97 @@
                 </a>
 
                 
-            </div>
-        </section>
-    
+            </div> -->
+    </section>
+
     <!-- footer section -->
-    <footer class='footer'>
-        <a href="mailto:comstockstone@yahoo.com" class='footer__link'>comstockstone@yahoo.com</a>
-        <ul class="social-list">
-            <li class='social-list__item'>
-                <a href="https://github.com/stone-com" class='social-list__link' target='_blank'>
-                    <i class='fab fa-github'></i>
-                </a>
-            </li>
-            <li class='social-list__item'>
-                <a href="https://www.linkedin.com/in/stone-comstock/" class='social-list__link' target='_blank'>
-                    <i class='fab fa-linkedin'></i>
-                </a>
-            </li>
-            <li class='social-list__item'>
-                <a href="https://facebook.com" class='social-list__link' target='_blank'>
-                    <i class='fab fa-facebook'></i>
-                </a>
-            </li>
-        </ul>
-        <a href="images/resume.pdf" download class='btn resume-btn'>Download My Resume</a>
-        
+    <footer class="footer">
+      <a href="mailto:comstockstone@yahoo.com" class="footer__link"
+        >comstockstone@yahoo.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://github.com/stone-com"
+            class="social-list__link"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/stone-comstock/"
+            class="social-list__link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://facebook.com"
+            class="social-list__link"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="images/resume.pdf" download class="btn resume-btn"
+        >Download My Resume</a
+      >
     </footer>
     <!-- link to JS file for nav toggle -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'coverflow',
+        slidesPerView: 3,
+        breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 820px
+    820: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 1100px
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+    depth: 50,
+  },
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+  </body>
 </html>
