@@ -344,30 +344,8 @@ header {
   margin-bottom: 2em;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.portfolio__item {
-  overflow: hidden;
-  margin: 4px;
-}
-.portfolio__img {
-  transition: transform 200ms;
-}
 
-/* increase size of portfolio image when hovering over item */
-.portfolio__img:hover {
-  transform: scale(1.2);
-}
 
-.portfolio__img--caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
 
 /* footer styling */
 
@@ -463,4 +441,7 @@ header {
 }
 span {
   margin-left: 1rem;
+}
+a:visited {
+  color: white;
 }
