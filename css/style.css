@@ -423,7 +423,7 @@ header {
   background-color: white;
   max-width: 650px;
   padding: 0;
-  height: 100%;
+  transform: scale(0.85);
 }
 .card__img {
   display: block;
@@ -450,14 +450,16 @@ header {
 }
 
 .card__btn {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  border: none;
-  border-radius: 0.4rem;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--clr-secondary);
+  text-decoration: none;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms;
 }
 span {
   margin-left: 1rem;
